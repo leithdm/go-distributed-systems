@@ -5,6 +5,9 @@ import (
 	"sync"
 )
 
+// multiple worker goroutines run concurrently, 
+// demonstrating simple parallel execution without complex synchronisation.
+
 // worker simulates a concurrent task.
 func worker(id int, wg *sync.WaitGroup) {
     defer wg.Done()
