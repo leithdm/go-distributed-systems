@@ -50,5 +50,6 @@ func muTex() {
 }
 
 func main() {
+	noMutex()
 	muTex()
 }
